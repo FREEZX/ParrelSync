@@ -131,6 +131,7 @@ namespace ParrelSync
             ClonesManager.LinkFolders(sourceProject.projectSettingsPath, cloneProject.projectSettingsPath);
             ClonesManager.LinkFolders(sourceProject.autoBuildPath, cloneProject.autoBuildPath);
             ClonesManager.LinkFolders(sourceProject.localPackages, cloneProject.localPackages);
+            ClonesManager.LinkFolders(sourceProject.fmodPath, cloneProject.fmodPath);
             
             //Optional Link Folders
             var optionalLinkPaths = Preferences.OptionalSymbolicLinkFolders.GetStoredValue();
